@@ -18,7 +18,7 @@ def programainicio():  # validacion de usuario y contraseña (inicio de sesion)
 	contadorintentos = 1
 
 	usuario= input('ingrese usuario: ')
-	contraseña = getpass.getpass("ingrese contraseña: ") #antes de entregar cambiar esta linea por : getpass.getpass("ingrese contraseña: ") input("ingrese contraseña : ")
+	contraseña = getpass.getpass("ingrese contraseña: ")
 	if nombreUsuario == usuario and claveUsuario==contraseña: 
 		global tipoUS
 		tipoUS = 'Administrador'
@@ -49,7 +49,7 @@ def menuprincipal():   #INTERFACE GRAFICA DE MENU PRINCIPAL
 	print('0-SALIR')
 
 
-def principal(): #PROCEDIMIENTO PRINCIPAL 
+def principal():
 	opc= 1 
 	while opc != '0':
 		menuprincipal()
@@ -69,7 +69,7 @@ def principal(): #PROCEDIMIENTO PRINCIPAL
 				limpiar()
 				print('la opcion ingresada no es valida')
 
-def gestiondelocales(): #MENU DE GESTION DE LOCALES 
+def gestiondelocales(): 
 	opc= 'A'
 	while opc != 'D':
 		limpiar()
@@ -90,7 +90,7 @@ def gestiondelocales(): #MENU DE GESTION DE LOCALES
 				print('esta opcion no es valida')
 
 
-def crearlocales(): #MENU CREACION LOCALES 
+def crearlocales(): 
 	opc2 = '1'
 	opc= 'S'
 	limpiar()
@@ -125,7 +125,7 @@ def crearlocales(): #MENU CREACION LOCALES
 				print('opcion incorrecta')
 	while opc2 != '0':
 		limpiar()
-		if contadorComida == 0 and contadorIndumentaria == 0 and contadorPerfumeria== 0: #CUANDO NO SE INGRESA NINGUN LOCAL (POR SI SE ENTRA EN EL SUB MENU POR ACCIDENTE)
+		if contadorComida == 0 and contadorIndumentaria == 0 and contadorPerfumeria == 0: #CUANDO NO SE INGRESA NINGUN LOCAL (POR SI SE ENTRA EN EL SUB MENU POR ACCIDENTE)
 			print('no hay locales cargados')
 			opc2 = input('ingrese 0 para volver')   
 		else:
@@ -166,7 +166,7 @@ def crearlocales(): #MENU CREACION LOCALES
 	while opc2 != '0':
 		opc2= input('ingrese 0 para volver')
 
-def gestiondenovedades(): #MENU GESTION DE NOVEDADES 
+def gestiondenovedades(): 
 	opc= 'A'
 	while opc != 'E':
 		limpiar()
@@ -190,7 +190,7 @@ def gestiondenovedades(): #MENU GESTION DE NOVEDADES
 				print('esta opcion no es valida')
 
 
-def encontrstuccion(): #EN CONSTRUCCION
+def encontrstuccion(): 
 
 	opc= 1
 	while opc!='0':
@@ -198,5 +198,5 @@ def encontrstuccion(): #EN CONSTRUCCION
 		print('Esta seccion esta en construccion')
 		opc= input('ingrese 0 para volver')
 
-programainicio() #INICIO
+programainicio()
 
