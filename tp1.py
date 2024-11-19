@@ -1,6 +1,5 @@
-import os   # IMPORTAMOS BIBLIOTECA OS PARA UTILIZARLA COMO HERRAMIENTA A LA HORA DE LIMPIAR PANTALLA 
-import getpass #IMPORTAMOS BIBLIOTECA GETPASS PARA OCULTAR LOS CARACTERES A LA HORA DE INGRESAR LA CONTRASEÑA 
-
+import os 
+import getpass 
 contadorComida = 0      #declaracion de variables globales 
 contadorIndumentaria= 0
 contadorPerfumeria =0
